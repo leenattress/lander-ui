@@ -1,0 +1,73 @@
+@tailwind base; /* Preflight will be injected here */
+
+:host {
+  display: block;
+}
+
+.btn {
+  backface-visibility: hidden;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  background: none;
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  padding: 1em 1.8125em;
+  border-radius: 4px;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.133;
+  -webkit-font-smoothing: antialiased;
+  transition: 150ms ease;
+  transition-property: background-color, border-color, box-shadow, color;
+  text-align: center;
+  user-select: none;
+  appearance: none;
+  cursor: pointer;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+  background-color: #008060;
+  color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  text-decoration: none;
+  margin-right: 8px;
+  margin-left: 8px;
+  flex-grow: 1;
+  margin-bottom: 8px;
+}
+
+
+.btn-large {
+  @apply text-2xl font-semibold  py-4 px-8 tracking-wider;
+}
+.btn:hover {
+  @apply transform scale-105 shadow-2xl;
+}
+.btn-outline {
+  @apply bg-gray-100 border-gray-500 text-gray-500;
+}
+
+.btn-purple {
+  @apply bg-purple-900 border-purple-900 text-white;
+}
+.btn-purple-outline {
+  @apply bg-white border-purple-900 text-purple-900;
+}
+
+.btn-teal {
+  @apply bg-teal-500 border-teal-500 text-white;
+}
+.btn-teal-outline {
+  @apply bg-white border-teal-500 text-teal-500;
+}
+
+.btn-orange {
+  @apply bg-orange-600 border-orange-600 text-white;
+}
+.btn-orange-outline {
+  @apply bg-white border-orange-600 text-orange-600;
+}

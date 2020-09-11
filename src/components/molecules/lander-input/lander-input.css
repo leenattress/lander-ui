@@ -1,0 +1,42 @@
+:host {
+  display: block;
+}
+
+.input {
+  font-family: inherit;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  display: inline-block;
+  height: 3.2em;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 1em 0.9375em;
+  color: #212326;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #6b7177;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #ffffff;
+  transition: padding 150ms;
+  appearance: none;
+  margin-right: 8px;
+  margin-left: 8px;
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 250px;
+  margin-bottom: 8px;
+}
+
+.input:focus {
+  @apply border-gray-800;
+}
+
+.label {
+  @apply font-semibold text-xl text-gray-900 tracking-wide;
+}
+.hint {
+  @apply text-base text-gray-600 tracking-wide mb-1;
+}

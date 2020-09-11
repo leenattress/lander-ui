@@ -1,0 +1,260 @@
+:root {
+  /* -------------- SUBATOMIC PARTICLES -------------- */
+
+  /* -------------- COLOURS -------------- */
+
+  --lander-color-black: #000;
+  --lander-color-white: #fff;
+
+  /* Grays */
+  /* --lander-color-gray-100: #f7fafc;
+  --lander-color-gray-200: #edf2f7;
+  --lander-color-gray-300: #e2e8f0;
+  --lander-color-gray-400: #cbd5e0;
+  --lander-color-gray-500: #b3b8b2;
+  --lander-color-gray-600: #718096;
+  --lander-color-gray-700: #4a5568;
+  --lander-color-gray-800: #2d3748;
+  --lander-color-gray-900: #1a202c; */
+
+  /* Modified Grays: A hint of teal */
+  --lander-color-gray-100: #f3f5f5;
+  --lander-color-gray-150: #dbe1e1;
+  --lander-color-gray-200: #dbe1e1;
+  --lander-color-gray-300: #c3cdcd;
+  --lander-color-gray-400: #9fafaf;
+  --lander-color-gray-500: #93a5a5;
+  --lander-color-gray-600: #879b9b;
+  --lander-color-gray-700: #6c7c7c;
+  --lander-color-gray-800: #444e4e;
+  --lander-color-gray-900: #292f2f;
+
+  /* Reds */
+  --lander-color-red-100: #fff5f5;
+  --lander-color-red-200: #fed7d7;
+  --lander-color-red-300: #feb2b2;
+  --lander-color-red-400: #fc8181;
+  --lander-color-red-500: #f56565;
+  --lander-color-red-600: #e53e3e;
+  --lander-color-red-700: #c53030;
+  --lander-color-red-800: #9b2c2c;
+  --lander-color-red-900: #742a2a;
+
+  /* Oranges */
+  --lander-color-orange-100: #fffaf0;
+  --lander-color-orange-200: #feebc8;
+  --lander-color-orange-300: #fbd38d;
+  --lander-color-orange-400: #f6ad55;
+  --lander-color-orange-500: #ed8936;
+  --lander-color-orange-600: #dd6b20;
+  --lander-color-orange-700: #c05621;
+  --lander-color-orange-800: #9c4221;
+  --lander-color-orange-900: #7b341e;
+
+  /* Yellows */
+  --lander-color-yellow-100: #fffff0;
+  --lander-color-yellow-200: #fefcbf;
+  --lander-color-yellow-300: #faf089;
+  --lander-color-yellow-400: #f6e05e;
+  --lander-color-yellow-500: #ecc94b;
+  --lander-color-yellow-600: #d69e2e;
+  --lander-color-yellow-700: #b7791f;
+  --lander-color-yellow-800: #975a16;
+  --lander-color-yellow-900: #744210;
+
+  /* Greens */
+  --lander-color-green-100: #f0fff4;
+  --lander-color-green200: #c6f6d5;
+  --lander-color-green300: #9ae6b4;
+  --lander-color-green400: #68d391;
+  --lander-color-green500: #48bb78;
+  --lander-color-green600: #38a169;
+  --lander-color-green700: #2f855a;
+  --lander-color-green800: #276749;
+  --lander-color-green900: #22543d;
+
+  /* Teals */
+  --lander-color-teal-100: #e6fffa;
+  --lander-color-teal-200: #b2f5ea;
+  --lander-color-teal-300: #81e6d9;
+  --lander-color-teal-400: #4fd1c5;
+  --lander-color-teal-500: #38b2ac;
+  --lander-color-teal-600: #319795;
+  --lander-color-teal-700: #2c7a7b;
+  --lander-color-teal-800: #285e61;
+  --lander-color-teal-900: #234e52;
+
+  /* Blues */
+  --lander-color-blue-100: #ebf8ff;
+  --lander-color-blue-200: #bee3f8;
+  --lander-color-blue-300: #90cdf4;
+  --lander-color-blue-400: #63b3ed;
+  --lander-color-blue-500: #4299e1;
+  --lander-color-blue-600: #3182ce;
+  --lander-color-blue-700: #2b6cb0;
+  --lander-color-blue-800: #2c5282;
+  --lander-color-blue-900: #2a4365;
+
+  /* Indigos */
+  --lander-color-indigo-100: #ebf4ff;
+  --lander-color-indigo-200: #c3dafe;
+  --lander-color-indigo-300: #a3bffa;
+  --lander-color-indigo-400: #7f9cf5;
+  --lander-color-indigo-500: #667eea;
+  --lander-color-indigo-600: #5a67d8;
+  --lander-color-indigo-700: #4c51bf;
+  --lander-color-indigo-800: #434190;
+  --lander-color-indigo-900: #3c366b;
+
+  /* Purples */
+  --lander-color-purple-100: #faf5ff;
+  --lander-color-purple-200: #e9d8fd;
+  --lander-color-purple-300: #d6bcfa;
+  --lander-color-purple-400: #b794f4;
+  --lander-color-purple-500: #9f7aea;
+  --lander-color-purple-600: #805ad5;
+  --lander-color-purple-700: #6b46c1;
+  --lander-color-purple-800: #553c9a;
+  --lander-color-purple-900: #44337a;
+
+  /* Pinks */
+  --lander-color-pink-100: #fff5f7;
+  --lander-color-pink-200: #fed7e2;
+  --lander-color-pink-300: #fbb6ce;
+  --lander-color-pink-400: #f687b3;
+  --lander-color-pink-500: #ed64a6;
+  --lander-color-pink-600: #d53f8c;
+  --lander-color-pink-700: #b83280;
+  --lander-color-pink-800: #97266d;
+  --lander-color-pink-900: #702459;
+
+  /* -------------- TRANSPARENT BACKGROUNDS -------------- */
+
+  /* Black */
+  --lander-background-transparent-black-100: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkkAQAAB8AG7jymN8AAAAASUVORK5CYII=);
+  --lander-background-transparent-black-200: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=);
+  --lander-background-transparent-black-300: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk8AEAAFIATgDK/mEAAAAASUVORK5CYII=);
+  --lander-background-transparent-black-400: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkSAMAAGwAaKJgE8oAAAAASUVORK5CYII=);
+  --lander-background-transparent-black-500: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=);
+  --lander-background-transparent-black-600: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII=);
+  --lander-background-transparent-black-700: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk2AQAALgAtFVIVl0AAAAASUVORK5CYII=);
+  --lander-background-transparent-black-800: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=);
+  --lander-background-transparent-black-900: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkeAoAAOsA57RxdOQAAAAASUVORK5CYII=);
+
+  /* -------------- SPACING -------------- */
+
+  /* Pixel Widths */
+  --lander-width-0: 0;
+  --lander-width-1: 1px;
+  --lander-width-2: 2px;
+  --lander-width-4: 4px;
+  --lander-width-8: 8px;
+
+  /* Spacings */
+  --lander-spacing: 0.25rem;
+  --lander-spacing-0: 0;
+  --lander-spacing-1: calc(var(--lander-spacing) * 1);
+  --lander-spacing-2: calc(var(--lander-spacing) * 2);
+  --lander-spacing-3: calc(var(--lander-spacing) * 3);
+  --lander-spacing-4: calc(var(--lander-spacing) * 4);
+  --lander-spacing-5: calc(var(--lander-spacing) * 5);
+  --lander-spacing-6: calc(var(--lander-spacing) * 6);
+  --lander-spacing-8: calc(var(--lander-spacing) * 8);
+  --lander-spacing-10: calc(var(--lander-spacing) * 10);
+  --lander-spacing-12: calc(var(--lander-spacing) * 12);
+  --lander-spacing-16: calc(var(--lander-spacing) * 16);
+  --lander-spacing-20: calc(var(--lander-spacing) * 20);
+  --lander-spacing-24: calc(var(--lander-spacing) * 24);
+  --lander-spacing-32: calc(var(--lander-spacing) * 32);
+  --lander-spacing-40: calc(var(--lander-spacing) * 40);
+  --lander-spacing-48: calc(var(--lander-spacing) * 48);
+  --lander-spacing-56: calc(var(--lander-spacing) * 56);
+  --lander-spacing-64: calc(var(--lander-spacing) * 64);
+
+  /* Columns */
+
+  --lander-column-1-12: 8.333333%;
+  --lander-column-2-12: 16.666667%;
+  --lander-column-3-12: 25%;
+  --lander-column-4-12: 33.333333%;
+  --lander-column-5-12: 41.666667%;
+  --lander-column-6-12: 50%;
+  --lander-column-7-12: 58.333333%;
+  --lander-column-8-12: 66.666667%;
+  --lander-column-9-12: 75%;
+  --lander-column-10-12:  83.333333%;
+  --lander-column-11-12:  91.666667%;
+  --lander-column-full:  100%;
+
+  /* Border Radius */
+  --lander-border-radius-none: 0;
+  --lander-border-radius-sm: 0.125rem;
+  --lander-border-radius-default: 0.25rem;
+  --lander-border-radius-md: 0.375rem;
+  --lander-border-radius-lg: 0.5rem;
+  --lander-border-radius-full: 9999px;
+
+  /* Border Radius */
+  --lander-font-weight-hairline: 100;
+  --lander-font-weight-thin: 200;
+  --lander-font-weight-light: 300;
+  --lander-font-weight-normal: 400;
+  --lander-font-weight-medium: 500;
+  --lander-font-weight-semibold: 600;
+  --lander-font-weight-bold: 700;
+  --lander-font-weight-extrabold: 800;
+  --lander-font-weight-black: 900;
+
+  /* -------------- BRAND COLORS -------------- */
+
+  /* Primary */
+  --lander-primary-color: var(--lander-color-orange-600);
+  --lander-primary-color-darker: var(--lander-color-orange-700);
+  --lander-primary-color-lighter: var(--lander-color-orange-500);
+
+  /* Secondary */
+  --lander-secondary-color: var(--lander-color-teal-800);
+  --lander-secondary-color-darker: var(--lander-color-teal-900);
+  --lander-secondary-color-lighter: var(--lander-color-orange-500);
+
+  /* Success */
+  --lander-success-color: var(--lander-color-teal-600);
+  --lander-success-color-darker: var(--lander-color-teal-700);
+  --lander-success-color-lighter: var(--lander-color-orange-500);
+
+  /* Danger */
+  --lander-danger-color: var(--lander-color-red-700);
+  --lander-danger-color-darker: var(--lander-color-red-800);
+  --lander-danger-color-lighter: var(--lander-color-orange-600);
+
+  /* Warning */
+  --lander-warning-color: var(--lander-color-orange-500);
+  --lander-warning-color-darker: var(--lander-color-orange-600);
+  --lander-warning-color-lighter: var(--lander-color-orange-400);
+
+  /* -------------- BORDERS -------------- */
+
+  --lander-border-radius: var(--lander-border-radius-md);
+  --lander-border-style: solid;
+  --lander-border-width: var(--lander-spacing-0);
+
+  /* -------------- TYPOGRAPHY -------------- */
+
+  --lander-font-size: 1em;
+  --lander-font-size-small: 0.8em;
+  --lander-font-size-large: 1.3em;
+  --lander-line-height: 1.2em;
+  --lander-line-height-small: 1em;
+  --lander-line-height-large: 1.4em;
+
+
+  /* ---------------------------- ATOMS ---------------------------- */
+
+
+  /* -------------- PAGE -------------- */
+  --lander-default-padding: var(--lander-spacing-0);
+
+  /* -------------- BLOCK -------------- */
+
+
+}

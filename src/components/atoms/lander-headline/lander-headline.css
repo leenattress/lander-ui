@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+.title-wide {
+  margin: 0;
+  width: 100%;
+}
+
+.title-narrow {
+  margin: 0 auto;
+  width: var(--lander-page-margin);
+}

@@ -1,0 +1,72 @@
+:host {
+  display: block;
+}
+
+.item {
+  flex-grow: 1;
+}
+
+.item1 {
+  width: 8.333333%;
+}
+.item2 {
+  width: 16.666667%;
+}
+.item3 {
+  width: 25%;
+}
+.item4 {
+  width: 33.333333%;
+}
+.item5 {
+  width: 41.666667%;
+}
+.item6 {
+  width: 50%;
+}
+.item7 {
+  width: 58.333333%;
+}
+.item8 {
+  width: 66.666667%;
+}
+.item9 {
+  width: 75%;
+}
+.item10 {
+  width: 83.333333%;
+}
+.item11 {
+  width: 91.666667%;
+}
+.item12 {
+  width: 100%;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+  .colwidth {
+    width: 640px;
+  }
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+  .colwidth {
+    width: 768px;
+  }
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+  .colwidth {
+    width: 1024px;
+  }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+  .colwidth {
+    width: 1280px;
+  }
+}

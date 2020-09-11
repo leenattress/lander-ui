@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Lander 🌑</title>
+
+    <!-- NPM Version-->
+    <!-- <script src="https://unpkg.com/lander-ui@0.0.1/dist/lander-ui.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lander-ui@0.0.1/dist/lander-ui/lander-ui.css" />
+     -->
+
+    <!-- Local Version-->
+
+    <script type="module" src="/build/lander-ui.esm.js"></script>
+    <script nomodule src="/build/lander-ui.js"></script>
+    <link rel="stylesheet" href="/build/lander-ui.css" />
+
+    <style>
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        height: 100%;
+      }
+      * {
+        font-family: 'Helvetica', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <lander-page backgroundcolor="#fbf7ed">
+      <lander-block slot="header">
+        <lander-block backgroundcolor="#004c3f">
+          <lander-text fontsize="0.9em" color="#fff" alignment="center" padding="0.25em"
+            >The world needs independent businesses. Learn about the actions we’re taking to address the impact of COVID‑19</lander-text
+          >
+        </lander-block>
+        <lander-block narrow="true">
+          <lander-grid>
+            <lander-block columns="2">
+              <svg id="logos-shopify-black" style="height: 70px; clip: rect(0px, 70px, 70px, 0px); overflow: hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 60">
+                  <path
+                    fill="#95BF47"
+                    d="M130.7 32.9c-.1-.9-.9-1.3-1.5-1.4-.6-.1-12.6-.2-12.6-.2s-10.1-9.8-11.1-10.8-2.9-.7-3.7-.5c0 0-1.9.6-5.1 1.6-.5-1.7-1.3-3.8-2.4-5.9-3.6-6.9-8.8-10.5-15.2-10.5-.4 0-.9 0-1.3.1-.2-.2-.4-.4-.6-.7-2.8-3-6.3-4.4-10.5-4.3-8.2.2-16.3 6.1-23 16.7-4.7 7.4-8.2 16.7-9.2 23.9-9.4 2.9-16 4.9-16.1 5-4.7 1.5-4.9 1.6-5.5 6.1C12.4 55.3 0 151.4 0 151.4l104.1 18 45.1-11.2S130.8 33.7 130.7 32.9zm-39.2-9.7c-2.4.7-5.1 1.6-8.1 2.5-.1-4.1-.6-9.9-2.5-14.9 6.3 1.2 9.3 8.2 10.6 12.4zM78 27.4c-5.5 1.7-11.4 3.5-17.4 5.4 1.7-6.4 4.9-12.8 8.8-17 1.5-1.6 3.5-3.3 5.9-4.3 2.3 4.7 2.7 11.4 2.7 15.9zM66.8 5.8c1.9 0 3.5.4 4.9 1.3-2.2 1.1-4.4 2.8-6.4 5-5.2 5.6-9.2 14.2-10.8 22.6-5 1.5-9.8 3-14.3 4.4 3-13.2 14-32.9 26.6-33.3z"
+                  ></path>
+                  <path
+                    fill="#5E8E3E"
+                    d="M129.2 31.5c-.6-.1-12.6-.2-12.6-.2s-10.1-9.8-11.1-10.8c-.4-.4-.9-.6-1.4-.6v149.5l45.1-11.2S130.8 33.8 130.7 32.9c-.2-.9-.9-1.3-1.5-1.4z"
+                  ></path>
+                  <path
+                    fill="#FFF"
+                    d="M79.1 54.7l-5.2 19.6s-5.8-2.7-12.8-2.2c-10.2.6-10.3 7-10.2 8.7.6 8.8 23.6 10.7 24.9 31.2 1 16.2-8.6 27.2-22.4 28.1-16.6 1-25.7-8.7-25.7-8.7l3.5-14.9s9.2 6.9 16.5 6.5c4.8-.3 6.5-4.2 6.3-7-.7-11.4-19.5-10.8-20.7-29.5-1-15.8 9.4-31.8 32.3-33.3 9-.8 13.5 1.5 13.5 1.5z"
+                  ></path>
+                  <g>
+                    <path
+                      d="M210.3 96.5c-5.2-2.8-7.9-5.2-7.9-8.5 0-4.2 3.7-6.9 9.6-6.9 6.8 0 12.8 2.8 12.8 2.8l4.8-14.6s-4.4-3.4-17.3-3.4c-18 0-30.5 10.3-30.5 24.8 0 8.2 5.8 14.5 13.6 19 6.3 3.6 8.5 6.1 8.5 9.9 0 3.9-3.1 7-9 7-8.7 0-16.9-4.5-16.9-4.5l-5.1 14.6s7.6 5.1 20.3 5.1c18.5 0 31.8-9.1 31.8-25.5.1-8.9-6.6-15.2-14.7-19.8zM284.1 65.7c-9.1 0-16.3 4.3-21.8 10.9l-.3-.1 7.9-41.4h-20.6l-20 105.3h20.6l6.9-36c2.7-13.6 9.7-22 16.3-22 4.6 0 6.4 3.1 6.4 7.6 0 2.8-.3 6.3-.9 9.1l-7.8 41.2h20.6l8.1-42.6c.9-4.5 1.5-9.9 1.5-13.4 0-11.5-6.2-18.6-16.9-18.6zM347.6 65.7c-24.8 0-41.2 22.4-41.2 47.4 0 16 9.9 28.8 28.4 28.8 24.3 0 40.8-21.8 40.8-47.4-.1-14.7-8.8-28.8-28-28.8zm-10.2 60.4c-7 0-10-6-10-13.4 0-11.8 6.1-31.1 17.3-31.1 7.3 0 9.7 6.3 9.7 12.4 0 12.7-6.1 32.1-17 32.1zM428.2 65.7c-13.9 0-21.8 12.2-21.8 12.2h-.3l1.2-11.1h-18.2c-.9 7.5-2.5 18.8-4.2 27.3l-14.3 75.4h20.6l5.7-30.5h.4s4.2 2.7 12.1 2.7c24.2 0 40-24.8 40-49.9.1-13.7-6.1-26.1-21.2-26.1zm-19.7 60.7c-5.4 0-8.5-3-8.5-3l3.4-19.3c2.4-12.8 9.1-21.4 16.3-21.4 6.3 0 8.2 5.8 8.2 11.4 0 13.3-7.9 32.3-19.4 32.3zM478.9 36.2c-6.6 0-11.8 5.2-11.8 12 0 6.1 3.9 10.3 9.7 10.3h.3c6.4 0 12-4.3 12.1-12 0-6-4-10.3-10.3-10.3zM450.1 140.4h20.6l14-73h-20.8zM537.1 67.2h-14.3l.7-3.4c1.2-7 5.4-13.3 12.2-13.3 3.7 0 6.6 1 6.6 1l4-16.1s-3.6-1.8-11.2-1.8c-7.3 0-14.6 2.1-20.2 6.9-7 6-10.3 14.6-12 23.3l-.6 3.4h-9.6l-3 15.5h9.6l-10.9 57.7H509l10.9-57.7h14.2l3-15.5zM586.7 67.4s-12.9 32.5-18.7 50.2h-.3c-.4-5.7-5.1-50.2-5.1-50.2H541l12.4 67.1c.3 1.5.1 2.4-.4 3.4-2.4 4.6-6.4 9.1-11.2 12.4-3.9 2.8-8.2 4.6-11.7 5.8l5.7 17.5c4.2-.9 12.8-4.3 20.2-11.2 9.4-8.8 18.1-22.4 27-40.9l25.2-54.1h-21.5z"
+                    ></path>
+                  </g>
+                </svg>
+              </svg>
+            </lander-block>
+            <lander-block columns="10"> </lander-block>
+          </lander-grid>
+        </lander-block>
+      </lander-block>
+      <lander-block slot="main" narrow="true">
+        <lander-grid>
+          <lander-block columns="6" sm="12" padding="1rem">
+            <lander-headline fontsize="3.5rem" lineheight="3.1rem" color="#004c3f" fontweight="700" alignment="left" padding="3rem 0 2rem 0"
+              >Build an online business—no matter what business you’re in</lander-headline
+            >
+            <lander-grid>
+              <lander-block columns="8" padding="0" sm="12" md="12" padding="1rem">
+                <lander-input type="text" placeholder="Enter your email address"></lander-input>
+              </lander-block>
+
+              <lander-block columns="4" padding="0 0 0 0.5em" sm="12" md="12" padding="1rem">
+                <lander-button colour="teal">Start free trial</lander-button>
+              </lander-block>
+            </lander-grid>
+
+            <lander-text fontsize="0.9em" color="#667766" alignment="left" padding="0 0 0 0.5rem"
+              >Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</lander-text
+            >
+          </lander-block>
+          <lander-block columns="6" sm="12" padding="1rem">
+            <img
+              style="width: 100%"
+              src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero-stock-small-72c1242fc5bbf6cfe135968110e9c52435af1e389c0fd4fe68208d21427e21e0.jpg"
+            />
+          </lander-block>
+        </lander-grid>
+      </lander-block>
+      <lander-block slot="main" hint="rgba(0,20,0,0.8)" backgroundimage="https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero-stock-small-72c1242fc5bbf6cfe135968110e9c52435af1e389c0fd4fe68208d21427e21e0.jpg">
+        <lander-block narrow="true">
+          <lander-headline padding="3rem 0 0 1rem" fontsize="2.5rem" lineheight="2.1rem" color="white" fontweight="500" alignment="left"
+            >Bring your business online</lander-headline
+          >
+          <lander-text padding="0 0 0 1rem" color="white"
+            >Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</lander-text
+          >
+        </lander-block>
+
+        <lander-block narrow="true">
+          <lander-grid>
+            <lander-block columns="3" sm="12" md="6" padding="1rem">
+              <lander-card
+                text="Food Thing"
+                textcolor="white"
+                meta="Oh tasty"
+                metacolor="white"
+                image="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/alfred/home-example-small-4bc93b93a9d345329480ea6e387cf6890323170a70473bad69a87424cad52e28.jpg"
+              ></lander-card>
+            </lander-block>
+            <lander-block columns="3" sm="12" md="6" padding="1rem">
+              <lander-card
+                text="Lonely Beach Yoga"
+                textcolor="white"
+                meta="Like Karate Kid but less cobra kai"
+                metacolor="white"
+                image="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/corey-moranis/home-example-small-6cf57deaaf9e7c38f45de3d300080353843430c1be3ab0ed3cd5e21b93157de8.jpg"
+              ></lander-card>
+            </lander-block>
+
+            <lander-block columns="3" sm="12" md="6" padding="1rem">
+              <lander-card
+                text="Hyper Coffee"
+                textcolor="white"
+                meta="Drink slowly of you'll explode"
+                metacolor="white"
+                image="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/detour-coffee/home-example-small-10f5c2735cb72e18af4d47a31a72326b3eb1f0611963d69d12a51ed31bed4acd.jpg"
+              ></lander-card>
+            </lander-block>
+
+            <lander-block columns="3" sm="12" md="6" padding="1rem">
+              <lander-card
+                text="Face Squirter"
+                textcolor="white"
+                meta="It goes on your face - for joy"
+                metacolor="white"
+                image="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/then-i-met-you/home-example-small-873ea125aea32650f2e2c282609c62a63be928583b8830cc67df98feff30ca89.jpg"
+              ></lander-card>
+            </lander-block>
+          </lander-grid>
+
+          <lander-headline padding="6rem 0 0 0" fontsize="2.5rem" lineheight="2.1rem" color="white" fontweight="500" alignment="left">Take the best path forward</lander-headline>
+
+          <lander-grid>
+            <lander-block columns="3" sm="12" md="6" padding="1rem">
+              <svg style="width: 45px; fill: #c1f0d0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45">
+                <path
+                  d="M41 6a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v31a3 3 0 0 0 3 3h6a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H7V12h31v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9 6zM11 9H7V6h4zm3 0V6h24v3zm27 12v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-2h-3v-3h4a2 2 0 0 1 2 2zm-.87 10.67L27.5 25.81a1.5 1.5 0 0 0-2.1 1.68l3.13 14.33A1.5 1.5 0 0 0 29.79 43H30a1.5 1.5 0 0 0 1.33-.8l3.07-5.8 5.61-2a1.5 1.5 0 0 0 .14-2.78zm-7.29 2.1a1.5 1.5 0 0 0-.83.71l-1.43 2.69L29 29.81l6.53 3zM21 33h-3v-5h3zm3 7v1a1 1 0 0 1-1 1h-3a2 2 0 0 1-2-2v-4h3v3h2a1 1 0 0 1 1 1zm8-18h-5v-3h5zm-12-3h4v3h-3v3h-3v-4a2 2 0 0 1 2-2z"
+                ></path>
+              </svg>
+              <lander-card
+                text="Start an online business"
+                textcolor="white"
+                meta="Create a business, whether you’ve got a fresh idea or are looking for a new way to make money."
+                metacolor="white"
+              ></lander-card>
+            </lander-block>
+
+            <lander-block columns="3" sm="12" md="6" padding="1rem">
+              <svg style="width: 45px; fill: #c1f0d0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45">
+                <path
+                  d="M41 6a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v31a3 3 0 0 0 3 3h6a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H7V12h31v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9 6zM11 9H7V6h4zm3 0V6h24v3zm27 12v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-2h-3v-3h4a2 2 0 0 1 2 2zm-.87 10.67L27.5 25.81a1.5 1.5 0 0 0-2.1 1.68l3.13 14.33A1.5 1.5 0 0 0 29.79 43H30a1.5 1.5 0 0 0 1.33-.8l3.07-5.8 5.61-2a1.5 1.5 0 0 0 .14-2.78zm-7.29 2.1a1.5 1.5 0 0 0-.83.71l-1.43 2.69L29 29.81l6.53 3zM21 33h-3v-5h3zm3 7v1a1 1 0 0 1-1 1h-3a2 2 0 0 1-2-2v-4h3v3h2a1 1 0 0 1 1 1zm8-18h-5v-3h5zm-12-3h4v3h-3v3h-3v-4a2 2 0 0 1 2-2z"
+                ></path>
+              </svg>
+              <lander-card
+                text="Move your business online"
+                textcolor="white"
+                meta="Turn your retail store into an online store and keep serving customers without missing a beat."
+                metacolor="white"
+              ></lander-card>
+            </lander-block>
+
+            <lander-block columns="3" sm="12" md="6" padding="1rem">
+              <svg style="width: 45px; fill: #c1f0d0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45">
+                <path
+                  d="M41 6a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v31a3 3 0 0 0 3 3h6a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H7V12h31v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9 6zM11 9H7V6h4zm3 0V6h24v3zm27 12v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-2h-3v-3h4a2 2 0 0 1 2 2zm-.87 10.67L27.5 25.81a1.5 1.5 0 0 0-2.1 1.68l3.13 14.33A1.5 1.5 0 0 0 29.79 43H30a1.5 1.5 0 0 0 1.33-.8l3.07-5.8 5.61-2a1.5 1.5 0 0 0 .14-2.78zm-7.29 2.1a1.5 1.5 0 0 0-.83.71l-1.43 2.69L29 29.81l6.53 3zM21 33h-3v-5h3zm3 7v1a1 1 0 0 1-1 1h-3a2 2 0 0 1-2-2v-4h3v3h2a1 1 0 0 1 1 1zm8-18h-5v-3h5zm-12-3h4v3h-3v3h-3v-4a2 2 0 0 1 2-2z"
+                ></path>
+              </svg>
+              <lander-card
+                text="Switch to Shopify"
+                textcolor="white"
+                meta="Bring your business to Shopify, no matter which ecommerce platform you’re currently using."
+                metacolor="white"
+              ></lander-card>
+            </lander-block>
+
+            <lander-block columns="3" sm="12" md="6" padding="1rem">
+              <svg style="width: 45px; fill: #c1f0d0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45">
+                <path
+                  d="M41 6a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v31a3 3 0 0 0 3 3h6a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H7V12h31v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9 6zM11 9H7V6h4zm3 0V6h24v3zm27 12v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-2h-3v-3h4a2 2 0 0 1 2 2zm-.87 10.67L27.5 25.81a1.5 1.5 0 0 0-2.1 1.68l3.13 14.33A1.5 1.5 0 0 0 29.79 43H30a1.5 1.5 0 0 0 1.33-.8l3.07-5.8 5.61-2a1.5 1.5 0 0 0 .14-2.78zm-7.29 2.1a1.5 1.5 0 0 0-.83.71l-1.43 2.69L29 29.81l6.53 3zM21 33h-3v-5h3zm3 7v1a1 1 0 0 1-1 1h-3a2 2 0 0 1-2-2v-4h3v3h2a1 1 0 0 1 1 1zm8-18h-5v-3h5zm-12-3h4v3h-3v3h-3v-4a2 2 0 0 1 2-2z"
+                ></path>
+              </svg>
+              <lander-card
+                text="Hire a Shopify expert"
+                textcolor="white"
+                meta="Get setup with the help of a trusted freelancer or agency from the Shopify Experts Marketplace."
+                metacolor="white"
+              ></lander-card>
+            </lander-block>
+          </lander-grid>
+        </lander-block>
+      </lander-block>
+
+      <lander-block slot="main" backgroundcolor="white" height="800px">
+        <lander-block narrow="true">
+          <lander-headline padding="3rem 0 0 0" fontsize="2.5rem" lineheight="2.1rem" color="black" fontweight="600" alignment="center"
+            >With you wherever you’re going</lander-headline
+          >
+          <lander-headline padding="2rem 0 0 0" fontsize="1.5rem" lineheight="1.5rem" color="#6b7177" fontweight="400" alignment="center"
+            >One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.</lander-headline
+          >
+        </lander-block>
+      </lander-block>
+
+      <lander-block slot="footer" narrow="true">
+        <lander-footer></lander-footer>
+      </lander-block>
+    </lander-page>
+  </body>
+</html>
